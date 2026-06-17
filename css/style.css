@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #781414;
+    --secondary-color: #91743f;
+    --bg-color: #faf4e8;
+    --text-color: #1c1919;
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Source Sans 3", sans-serif;
+    --spacing: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+.header-main {
+    background-color: var(--bg-color);
+    border-bottom:#e0e0e0 solid 1px;
+    padding: var(--spacing);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    font-family: var(--font-heading);  
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-actions .nav-action {
+    color: var(--text-color);
+    font-family: var(--font-heading);  
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-actions .nav-action:hover {
+    color: var(--primary-color);
+}
+
+.nav-actions .nav-action img {
+    width: 24px;
+    height: 24px;
+}
