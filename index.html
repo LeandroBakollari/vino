@@ -1,56 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    
-    <!--Fonts-->
+    <title>Vino | Kantina e Verërave Artizanale</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">    
-
-    <!--Stylesheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-
-
 </head>
-<body class="page-home">
-    <header class="header-main">
-        <nav class="navbar">
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
             <a href="index.html" class="nav-brand">Vino</a>
 
             <ul class="nav-links">
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Visit us</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="location.html" class="nav-link">Location</a></li>
             </ul>
 
-            <div class="nav-actions">
-                <a href="search.html" class="nav-action"><img src="assets/images/icons/search.svg" alt="Search"></a>
-                <a href="login.html" class="nav-action"><img src="assets/images/icons/user.svg" alt="User"></a>
-                <a href="cart.html" class="nav-action"><img src="assets/images/icons/cart.svg" alt="Cart"></a>
+            <div class="nav-actions" aria-label="Quick links">
+                <a href="#" class="nav-action" aria-label="Search">
+                    <img src="assets/images/icons/search.svg" alt="">
+                </a>
+                <a href="#" class="nav-action" aria-label="Account">
+                    <img src="assets/images/icons/user.svg" alt="">
+                </a>
+                <a href="#" class="nav-action" aria-label="Cart">
+                    <img src="assets/images/icons/cart.svg" alt="">
+                </a>
             </div>
-
         </nav>
     </header>
 
     <main class="main-content">
         <section class="hero-section">
-            <div class="container hero-container">
+            <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">Welcome to Vino</h1>
-                    <p class="hero-subtitle">Discover our collection of hand-made wines.</p>
-                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    <h1 class="hero-title">Vino</h1>
+                    <p class="hero-subtitle">Verëra artizanale shqiptare dhe mesdhetare, të zgjedhura me kujdes për momente të veçanta.</p>
+                    <a href="shop.html" class="btn btn-primary">Shiko koleksionin</a>
                 </div>
             </div>
         </section>
+
+        <section class="motto-section">
+            <div class="container motto-container">
+                <h2 class="motto-title">" Shije e pastër, traditë e përjetshme. "</h2>
+                <p class="motto-text">Një udhëtim i thjeshtë në botën e verës.</p>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="container product-layout">
+                <div class="product-intro">
+                    <p class="section-label">Top hits</p>
+                    <h2 class="section-title">Verërat më të zgjedhura</h2>
+                    <a href="shop.html" class="btn btn-primary">Shiko të gjitha</a>
+                </div>
+
+                <div class="product-carousel" data-carousel>
+                    <div class="product-window">
+                        <div class="product-track" data-carousel-track aria-label="Top hit wines">
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/images/ui/wineB.png" alt="Vino Reserve e Kuqe">
+                                </div>
+                                <h3>Vino Reserve e Kuqe</h3>
+                                <p>Merlot, Cabernet, fruta të errëta</p>
+                                <span>€28.00</span>
+                                <div class="product-actions">
+                                    <button type="button" class="product-button product-button-primary">Add to cart</button>
+                                    <a href="shop.html" class="product-button">Details</a>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/images/ui/wineB1.png" alt="Bardhë Mesdhetare">
+                                </div>
+                                <h3>Bardhë Mesdhetare</h3>
+                                <p>Aromë agrumesh dhe fund i butë</p>
+                                <span>€22.50</span>
+                                <div class="product-actions">
+                                    <button type="button" class="product-button product-button-primary">Add to cart</button>
+                                    <a href="shop.html" class="product-button">Details</a>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/images/ui/wineB2.png" alt="Rosé e Verës">
+                                </div>
+                                <h3>Rosé e Verës</h3>
+                                <p>Luleshtrydhe, minerale, aciditet i lehtë</p>
+                                <span>€19.00</span>
+                                <div class="product-actions">
+                                    <button type="button" class="product-button product-button-primary">Add to cart</button>
+                                    <a href="shop.html" class="product-button">Details</a>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/images/ui/wineB3.png" alt="Vino e Gazuar">
+                                </div>
+                                <h3>Vino e Gazuar</h3>
+                                <p>E freskët, festive, me aromë frutash</p>
+                                <span>€24.00</span>
+                                <div class="product-actions">
+                                    <button type="button" class="product-button product-button-primary">Add to cart</button>
+                                    <a href="shop.html" class="product-button">Details</a>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/images/ui/wineB4.png" alt="Koleksion Special Vino">
+                                </div>
+                                <h3>Koleksion Special</h3>
+                                <p>Edicion i kufizuar nga kantina</p>
+                                <span>€34.00</span>
+                                <div class="product-actions">
+                                    <button type="button" class="product-button product-button-primary">Add to cart</button>
+                                    <a href="shop.html" class="product-button">Details</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls" aria-label="Product carousel controls">
+                        <button type="button" class="carousel-button" data-carousel-prev aria-label="Previous product">&lt;</button>
+                        <span class="carousel-count" data-carousel-count>1-3 / 5</span>
+                        <button type="button" class="carousel-button" data-carousel-next aria-label="Next product">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section section-light">
+            <div class="container product-layout">
+                <div class="product-intro">
+                    <p class="section-label">Kategoritë</p>
+                    <h2 class="section-title">Zgjidh sipas shijes</h2>
+                    <a href="shop.html" class="btn btn-primary">Eksploro</a>
+                </div>
+
+                <div class="category-list" aria-label="Wine categories">
+                    <a href="shop.html" class="category-card">
+                        <img src="assets/images/ui/wineB5.png" alt="Verë premium e kuqe">
+                        <p class="product-tag">E kuqe</p>
+                        <h3>Verë premium</h3>
+                        <p>Trup i plotë, aromë e thellë</p>
+                        <span class="category-arrow" aria-hidden="true">&gt;</span>
+                    </a>
+                    <a href="shop.html" class="category-card">
+                        <img src="assets/images/ui/wineB6.png" alt="Verë elegante e bardhë">
+                        <p class="product-tag">E bardhë</p>
+                        <h3>Verë elegante</h3>
+                        <p>E freskët, e lehtë, aromatike</p>
+                        <span class="category-arrow" aria-hidden="true">&gt;</span>
+                    </a>
+                    <a href="shop.html" class="category-card">
+                        <img src="assets/images/ui/wineB7.png" alt="Koleksion special vere">
+                        <p class="product-tag">Speciale</p>
+                        <h3>Edicione të kufizuara</h3>
+                        <p>Zgjedhje sezonale nga kantina</p>
+                        <span class="category-arrow" aria-hidden="true">&gt;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-panel">
+                <div class="feature-copy">
+                    <p class="section-label">Staff pick</p>
+                    <h2 class="feature-title">Reserve e Kantinës</h2>
+                    <p class="section-text">Një verë e kuqe me karakter të thellë, e matur me kujdes dhe e krijuar për darka të qeta.</p>
+                    <a href="shop.html" class="btn btn-primary">Shiko verën</a>
+                </div>
+
+                <img class="feature-image" src="assets/images/ui/wineB8.png" alt="Vino Reserve e zgjedhur nga stafi">
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="container story-stack">
+                <article class="story-panel">
+                    <img src="assets/images/ui/hero5.jpg" alt="Vreshta dhe kantina Vino">
+                    <div class="story-copy">
+                        <h2>Udhëtimi nga vreshti te shishja</h2>
+                        <p>Historia jonë nis te toka. Rrushi përzgjidhet me kujdes, respektohet sezoni dhe çdo shishe ruan karakterin e vreshtit.</p>
+                    </div>
+                </article>
+
+                <article class="story-panel story-panel-reverse">
+                    <div class="story-copy">
+                        <h2>Traditë e ruajtur me mjeshtëri</h2>
+                        <p>Kantina bashkon metoda tradicionale me kujdes modern, duke krijuar verëra të pastra, autentike dhe të lehta për t'u shijuar.</p>
+                    </div>
+                    <img src="assets/images/ui/hero4.jpg" alt="Fuçi druri në kantinë">
+                </article>
+            </div>
+        </section>
     </main>
-    
-    <footer class="footer-main">
-    </footer>
+
+    <footer class="site-footer"></footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

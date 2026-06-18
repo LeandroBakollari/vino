@@ -1,2 +1,3 @@
-# vino
-Vino is a modern ecommerce platform dedicated to Albanian and Mediterranean artisanal wines.
+# Vino
+
+A simple static ecommerce website for Albanian and Mediterranean artisanal wines.

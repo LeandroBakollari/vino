@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Vino | About</title>
 
-    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">    
-
-    <!--Stylesheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-    <header class="header-main">
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
             <a href="index.html" class="nav-brand">Vino</a>
 
             <ul class="nav-links">
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="location.html" class="nav-link">Location</a></li>
             </ul>
 
-            <div class="nav-actions">
-                <a href="search.html" class="nav-action"><img src="assets/images/icons/search.svg" alt="Search"></a>
-                <a href="login.html" class="nav-action"><img src="assets/images/icons/user.svg" alt="User"></a>
-                <a href="cart.html" class="nav-action"><img src="assets/images/icons/cart.svg" alt="Cart"></a>
+            <div class="nav-actions" aria-label="Quick links">
+                <a href="#" class="nav-action" aria-label="Search">
+                    <img src="assets/images/icons/search.svg" alt="">
+                </a>
+                <a href="#" class="nav-action" aria-label="Account">
+                    <img src="assets/images/icons/user.svg" alt="">
+                </a>
+                <a href="#" class="nav-action" aria-label="Cart">
+                    <img src="assets/images/icons/cart.svg" alt="">
+                </a>
             </div>
-
         </nav>
     </header>
 
-    <main class="main-content">
-    </main>
-    
-    <footer class="footer-main">
-    </footer>
+    <main class="main-content container"></main>
+
+    <footer class="site-footer"></footer>
 </body>
 </html>
