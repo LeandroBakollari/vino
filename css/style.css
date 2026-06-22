@@ -1009,7 +1009,7 @@ a {
 .about-header {
     min-height: 350px;
     padding: 30px;
-    background: rgb(233, 217, 209);
+    background: rgba(255, 244, 244, 0.4);   
 }
 
 .about-header-content {
@@ -1030,21 +1030,21 @@ a {
 }
 
 .about-description {
-    width: min(100%, 1200px);
+    width: min(100%, 1000px);
     margin: 0;
     padding-bottom: 22px;
     color: var(--color-text);
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 1.4;
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .column-grid-section {
-    padding: 80px 12px;
-    background: var(--color-page);
-    border-top: 1px solid var(--color-border);
+    padding: 80px 160px;
+    background: rgba(255, 244, 244, 0.4);
     border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
 }
 
 .grid-title {
@@ -1059,21 +1059,15 @@ a {
 .three-column-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
-.column-grid-card {
-    background: #fffcf6;
-    border: 1px solid var(--color-border);
-    padding: 32px;
-    border-radius: 6px;
-    width: 100%;
-    transition: border-color 0.2s ease;
+.column-grid-card:not(:last-child) {
+    border-right:var(--color-border) 1px solid;
+    padding-right: 48px;
 }
 
-.column-grid-card:hover{
-    border-color: var(--color-brand);
-}
 
 .grid-column-title {
     font-family: var(--font-heading);
