@@ -37,7 +37,75 @@
         </nav>
     </header>
 
-    <main class="main-content container"></main>
+    <main class="main-content container">
+        <section class="contact-hero">
+            <h1 class="contact-hero__title">Contact Us</h1>
+            <p class="contact-hero__text">Whether you have questions about our wines, wish to arrange a visit, or simply want to share your thoughts, we are here to listen and assist. Contact Vino now!</p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-info">
+                <div class="contact-info__block">
+                    <h2>Our Location</h2>
+                    <p>Our winery is located just a short drive from Tirana and Durrës and is located close to Tirana International Airport. Our exact location is shown on the map below:</p>
+                    
+                    <div class="contact-info__map">
+                        <p>[ Interactive Map Goes Here ]</p>
+                    </div>
+                    
+                    <p><strong>Vino Winery & Vineyard, Gjiri i Lalëzit, Durrës, Albania</strong></p>
+                </div>
+
+                <div class="contact-info__block">
+                    <h2>Reach Out</h2>
+                    <p>
+                        <a href="tel:+355689011222">+355 68 90 11 222</a><br>
+                        <a href="mailto:info@vino.al">info@vino.al</a>
+                    </p>
+                    <div class="contact-info__actions">
+                        <a href="location.html" class="btn btn-primary">Get Directions</a>
+                        <a href="#" class="btn btn-secondary">WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="contact-info__block">
+                    <h2>Opening Hours</h2>
+                    <p>Monday to Sunday: 10:00 – 21:00</p>
+                </div>
+
+                <div class="contact-info__block">
+                    <h2>Winery Tours and Tastings</h2>
+                    <p>Explore the art of winemaking with a guided tour of Vino’s Vineyard. Learn about our process, enjoy wine tasting sessions, and immerse yourself in the beauty of Albanian winemaking. For more details and to book your tour, please visit our <a href="#" class="text-link">Tours Page</a>.</p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <div class="contact-form__intro">
+                    <h2>Inquiry Form</h2>
+                    <p>Feel free to reach out to us with any inquiries or feedback. Our team is dedicated to providing prompt and helpful responses. Please use this form, and we will get back to you as soon as possible.</p>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="contact-form__group">
+                        <label for="name" class="contact-form__label">Full Name</label>
+                        <input type="text" id="name" name="name" class="contact-form__input" required>
+                    </div>
+
+                    <div class="contact-form__group">
+                        <label for="email" class="contact-form__label">Email</label>
+                        <input type="email" id="email" name="email" class="contact-form__input" required>
+                    </div>
+
+                    <div class="contact-form__group">
+                        <label for="message" class="contact-form__label">Message</label>
+                        <textarea id="message" name="message" rows="6" class="contact-form__input" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-form__submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer class="site-footer"></footer>
 </body>
