@@ -786,25 +786,25 @@ a {
     display: flex;
     align-items: center;
     min-height: 450px;
-    background-color: var(--color-brand);
+    background-color: var(--color-border);
     overflow: hidden;
 }
 
 .about-hero__layout {
     position: relative;
-    z-index: 2; /* Ensures text stays above the image */
+    z-index: 2;
     width: 100%;
     min-height: 450px;
 }
 
 .about-hero__content {
     max-width: 55%;
-    padding: 80px 24px;
+    padding: 80px 42px;
 }
 
 .about-hero__title {
     margin: 0 0 24px;
-    color: #ffffff;
+    color: var(--color-brand);
     font-family: var(--font-heading);
     font-size: 3.5rem;
     line-height: 1.1;
@@ -812,7 +812,7 @@ a {
 
 .about-hero__text {
     margin: 0;
-    color: var(--color-page);
+    color: var(--color-text);
     font-family: var(--font-body);
     font-size: 1.25rem;
     line-height: 1.6;
@@ -825,17 +825,14 @@ a {
     right: 0;
     bottom: 0;
     width: 42%; 
-    height: 100%; /* FIXED: Stretches cleanly to the container height */
+    height: 100%; 
 }
 
 .about-hero__image {
     width: 100%;
-    height: 100%; /* FIXED: Matches the parent wrapper */
+    height: 100%; 
     object-fit: cover; 
     object-position: center;
-    
-    /* THE FIX: Elliptical border-radius for a gentle, sweeping curve */
-    /* It dips 120px inward, but stretches over 50% of the height */
     
 }
 
@@ -873,7 +870,7 @@ a {
     color: var(--color-brand);
     font-size: 1.25rem;
     margin-bottom: 12px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.02em;   
 }
 
@@ -948,7 +945,6 @@ a {
 
 .landscape-feature__image {
     width: 100%;
-    /* 21/9 gives it a very cinematic, wide landscape feel */
     aspect-ratio: 21 / 9; 
     object-fit: cover;
     margin-bottom: 40px;
@@ -999,17 +995,15 @@ a {
     margin: 0;
 }
 
-/* Updated Layout: Single Column, centered, constrained width */
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr; /* Forces a single linear column */
-    gap: 80px; /* Gives nice breathing room between the info and the form */
+    grid-template-columns: 1fr; 
+    gap: 80px; 
     padding: 40px 0 80px;
-    max-width: 800px; /* Prevents the text and form from stretching too wide on big screens */
+    max-width: 800px; 
     margin: 0 auto;
 }
 
-/* Contact Info Box Styles */
 .contact-info {
     display: grid;
     gap: 40px;
@@ -1050,10 +1044,9 @@ a {
     font-weight: 600;
 }
 
-/* Map Placeholder Styling */
 .contact-info__map {
     width: 100%;
-    height: 350px; /* Made slightly taller since it's full width now */
+    height: 350px; 
     background-color: #e5ded2;
     display: flex;
     align-items: center;
@@ -1083,7 +1076,7 @@ a {
     background: #fff7eb;
 }
 
-/* Form Styles */
+
 .contact-form-wrapper {
     display: grid;
     gap: 32px;
