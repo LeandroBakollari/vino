@@ -3,6 +3,9 @@
     --color-page: #faf4e8;
     --color-text: #1c1919;
     --color-border: #ded0bf;
+    --color-surface-light: #F9F6F0;
+    --color-surface-stone: #EBE5DF;
+    
     --font-heading: "Playfair Display", serif;
     --font-body: "Source Sans 3", sans-serif;
     --container-width: 90%;
@@ -23,6 +26,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    
 }
 
 .sr-only {
@@ -49,7 +53,9 @@ a {
 .site-header {
     background: var(--color-page);
     border-bottom: 1px solid var(--color-border);
-    position: sticky;   
+    position: sticky; 
+    top: 0;
+    z-index: 100;  
 }
 
 .navbar {
@@ -188,7 +194,7 @@ a {
 
 .motto-section {
     padding: 20px 0 20px;
-    background: var(--color-border);
+    background: var(--color-surface-stone);
 }
 
 .motto-container {
@@ -786,7 +792,7 @@ a {
     display: flex;
     align-items: center;
     min-height: 450px;
-    background-color: var(--color-border);
+    background-color: var(--color-surface-stone);
     overflow: hidden;
 }
 
@@ -1009,7 +1015,12 @@ a {
     gap: 40px;
     padding: 48px 40px;
     background: rgba(255, 244, 244, 0.4);
-    border: 1px solid var(--color-border);
+}
+
+.contact-info__block {
+    display: grid;
+    gap: 12px;
+    justify-items: center;
 }
 
 .contact-info__block h2 {
@@ -1017,6 +1028,7 @@ a {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     margin: 0 0 16px;
+    justify-items: center;
 }
 
 .contact-info__block p, 
@@ -1028,10 +1040,12 @@ a {
     margin: 0 0 8px;
     text-decoration: none;
     transition: color 0.2s ease;
+    justify-items: center;
 }
 
 .contact-info__block p strong {
     color: var(--color-brand);
+    
 }
 
 .contact-info__block a:not(.btn):hover,
@@ -1057,7 +1071,6 @@ a {
     font-weight: 700;
 }
 
-/* Action Buttons */
 .contact-info__actions {
     display: flex;
     gap: 16px;
