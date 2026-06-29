@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "title": "The Alchemy of the Oak: How Our Reserve Gets Its Deep Character",
+        "date": "Oct 12, 2026",
+        "category": "Behind the Vines",
+        "image": "assets/images/ui/hero2.jpg",
+        "content": [
+            "Patience is the truest ingredient in winemaking. Discover the quiet, undisturbed journey our hand-selected grapes take inside French oak barrels before they ever reach your glass.",
+            "From hand-selecting the finest grapes at dawn's first light to the precise, patient alchemy of oak barrel fermentation, our small-batch approach ensures that excellence is never compromised.",
+            "We believe that exceptional wine isn't just made—it is nurtured from the ground up. Our reserves rest undisturbed until they reach absolute, flawless maturity."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "A Guide to Pairing Mediterranean Whites",
+        "date": "Oct 08, 2026",
+        "category": "Pairings",
+        "image": "assets/images/ui/wineB1.png",
+        "content": [
+            "From fresh coastal seafood to aged cheeses, here is how to perfectly balance the citrus and mineral notes of our summer selections.",
+            "A crisp white wine from the Mediterranean coast carries a natural salinity that cuts through rich olive oils and buttery seafood perfectly. We recommend pairing our Mediterranean White with grilled sea bass, lemon, and a touch of wild oregano.",
+            "For a lighter evening, pair it with a fresh goat cheese salad. The acidity of the wine cleanses the palate, leaving a refreshing, soft finish."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Rooted in History: The Soils of Albania",
+        "date": "Oct 01, 2026",
+        "category": "Heritage",
+        "image": "assets/images/ui/hero4.jpg",
+        "content": [
+            "Why does terroir matter? We explore the unique microclimates and ancient, mineral-rich soils that give our grapes their bold identity.",
+            "Our wines are rooted in mineral-rich soil, shaped by unique microclimates and perfect sun exposure. The terraced slopes of our historic valleys drain perfectly, forcing the vines to dig deep for nutrients.",
+            "This struggle is what gives the grapes their concentrated flavors and deep character. It is a winemaking tradition celebrated in these lands for millennia."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Rooted in the Albanian Sun",
+        "date": "Sep 25, 2026",
+        "category": "Terroir",
+        "image": "assets/images/ui/vineyard-landscape.jpg",
+        "content": [
+            "Every glass of Vino is a tribute to the rugged, sun-drenched hills of the Mediterranean. From the terraced slopes to the gentle coastal breezes.",
+            "We treat the earth with deep respect. Through conscious farming and low-intervention methods, we protect the land that gives our wine life.",
+            "The Albanian sun provides the perfect ripening conditions, ensuring our red varieties develop a full body and a deep, complex aroma."
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Untamed Beauty in Every Pour",
+        "date": "Sep 18, 2026",
+        "category": "Craft",
+        "image": "assets/images/ui/hero8.jpg",
+        "content": [
+            "We don't just bottle wine; we capture the untamed beauty and rich heritage of our land, ensuring that every pour transports you straight to the heart of our vineyards.",
+            "Experience our dedication to authentic, small-batch craftsmanship. Every bottle tells a story of patience, soil, and dedication.",
+            "Whether it's an intimate evening or a grand milestone, our bottles are designed to elevate your most memorable moments."
+        ]
+    },
+    {
+        "id": 6,
+        "title": "More Than Just a Beverage",
+        "date": "Sep 12, 2026",
+        "category": "Community",
+        "image": "assets/images/ui/hero.jpg",
+        "content": [
+            "As a premium platform dedicated to Albanian and Mediterranean artisanal wines, we believe wine is an invitation to connect.",
+            "It is an experience that brings people together and creates lasting memories. We craft our vintages to be modern masterpieces that honor their classic roots.",
+            "Wine is poetry in a bottle, patiently written by the earth and completed by those who share it."
+        ]
+    },
+    {
+        "id": 7,
+        "title": "The Art of Decanting",
+        "date": "Sep 05, 2026",
+        "category": "Education",
+        "image": "assets/images/ui/hero5.jpg",
+        "content": [
+            "Decanting isn't just for show. Exposing a young, bold red wine to oxygen softens its tannins and releases hidden aromatic profiles.",
+            "For our Cellar Reserve, we recommend decanting for at least 45 minutes before serving. You will notice the dark fruit notes become much more pronounced.",
+            "Even some complex white wines benefit from a brief decanting process to let their mineral qualities shine."
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Discovering the Kallmet Grape",
+        "date": "Aug 29, 2026",
+        "category": "Varietals",
+        "image": "assets/images/ui/wineB5.png",
+        "content": [
+            "Kallmet is an ancient, native Albanian grape variety that produces some of the most elegant and deeply colored red wines in the Mediterranean.",
+            "Known for its bright acidity, notes of cherry, and subtle spice, it is a grape that perfectly reflects the Albanian terroir.",
+            "We cultivate our Kallmet with minimal intervention, allowing the true, authentic flavor of the grape to dominate the bottle."
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Join Us for the Annual Harvest Festival",
+        "date": "Aug 20, 2026",
+        "category": "Events",
+        "image": "assets/images/ui/hero4.jpg",
+        "content": [
+            "Celebrate the culmination of a year’s hard work. Live music, exclusive tastings, and sunset tours of the estate await you this autumn.",
+            "Guests will have the opportunity to walk the vineyards, meet our head winemaker, and even participate in the traditional grape crushing.",
+            "Reserve your tickets early, as this is an intimate event designed to connect our community with the true roots of our craft."
+        ]
+    }
+]

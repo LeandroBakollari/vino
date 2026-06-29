@@ -135,3 +135,104 @@ document.querySelectorAll("[data-subscribe-form]").forEach((form) => {
         form.reset();
     });
 });
+
+
+// --- Dynamic Blog Rendering Logic ---
+// --- Dynamic Blog Grid Rendering Logic ---
+const blogGridContainer = document.getElementById("blog-grid-container");
+
+if (blogGridContainer) {
+    fetch('articles.json')
+        .then(response => response.json())
+        .then(articles => {
+            // Clear the container just in case
+            blogGridContainer.innerHTML = ""; 
+
+            // Loop through every article in the JSON file
+            articles.forEach(article => {
+                // Create the article element
+                const articleCard = document.createElement("article");
+                articleCard.className = "blog-card";
+
+                // Grab the first paragraph to use as the excerpt
+                const excerpt = article.content[0];
+
+                // Build the HTML structure for the card
+                articleCard.innerHTML = `
+                    <img src="${article.image}" alt="${article.title}" class="blog-card__image">
+                    <div class="blog-card__content">
+                        <span class="blog-tag">${article.date}</span>
+                        <h3 class="blog-card__title">${article.title}</h3>
+                        <p class="blog-card__excerpt">${excerpt}</p>
+                        <a href="article.html?id=${article.id}" class="blog-card__link">Read more &rarr;</a>
+                    </div>
+                `;
+
+                // Add the completed card to the grid
+                blogGridContainer.appendChild(articleCard);
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching articles for the grid:", error);
+            blogGridContainer.innerHTML = "<p>Unable to load articles at this time.</p>";
+        });
+}
+
+// Check if we are on the single article page
+const articleContainer = document.getElementById("article-container");
+
+if (articleContainer) {
+    // 1. Get the ID from the URL (e.g., article.html?id=2)
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+
+    // DOM Elements
+    const titleEl = document.getElementById("post-title");
+    const dateEl = document.getElementById("post-date");
+    const categoryEl = document.getElementById("post-category");
+    const imageEl = document.getElementById("post-image");
+    const contentEl = document.getElementById("post-content");
+    const errorMessage = document.getElementById("error-message");
+
+    if (articleId) {
+        // 2. Fetch the JSON data
+        fetch('articles.json')
+            .then(response => response.json())
+            .then(articles => {
+                // Find the specific article
+                const article = articles.find(a => a.id == articleId);
+
+                if (article) {
+                    // 3. Inject data into HTML
+                    titleEl.textContent = article.title;
+                    dateEl.textContent = article.date;
+                    categoryEl.textContent = article.category;
+                    imageEl.src = article.image;
+                    imageEl.alt = article.title;
+
+                    // Clear loading text and append paragraphs
+                    contentEl.innerHTML = "";
+                    article.content.forEach(paragraph => {
+                        const p = document.createElement("p");
+                        p.textContent = paragraph;
+                        contentEl.appendChild(p);
+                    });
+                } else {
+                    // Article ID not found in JSON
+                    showError();
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching articles:", error);
+                showError();
+            });
+    } else {
+        // No ID in URL
+        showError();
+    }
+
+    function showError() {
+        articleContainer.style.display = "none";
+        errorMessage.style.display = "block";
+    }
+}

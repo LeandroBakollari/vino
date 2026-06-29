@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vino | Blog</title>
-
+    <title>Vino | Journal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,7 +11,7 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar container" aria-label="Main navigation">
+        <nav class="navbar" aria-label="Main navigation">
             <a href="index.html" class="nav-brand">Vino</a>
 
             <ul class="nav-links">
@@ -38,32 +37,29 @@
     </header>
 
     <main class="main-content">
-        <section class="blog-header container">
-            <h1 class="blog-header__title">The Cellar Journal</h1>
-            <p class="blog-header__text">Stories, pairings, and secrets from the heart of our Mediterranean vineyards.</p>
-        </section>
+        <div id="error-message" class="container single-article__error" style="display: none;">
+            <h2>Article Not Found</h2>
+            <p>It looks like this story doesn't exist. <a href="blog.html">Return to the blog.</a></p>
+        </div>
 
-        <section class="blog-featured-section">
-            <article class="blog-featured">
-                <div class="blog-featured__visual">
-                    <img src="assets/images/ui/hero2.jpg" alt="Pouring red wine into a glass" class="blog-featured__image">
+        <article id="article-container" class="single-article">
+            <header class="single-article__header container">
+                <a href="blog.html" class="back-link">&larr; Back to Journal</a>
+                <div class="single-article__meta">
+                    <span id="post-category" class="blog-tag"></span> &bull; <span id="post-date"></span>
                 </div>
-                <div class="blog-featured__content">
-                    <span class="blog-tag">Behind the Vines</span>
-                    <h2 class="blog-featured__title">The Alchemy of the Oak: How Our Reserve Gets Its Deep Character</h2>
-                    <p class="blog-featured__excerpt">Patience is the truest ingredient in winemaking. Discover the quiet, undisturbed journey our hand-selected grapes take inside French oak barrels before they ever reach your glass.</p>
-                    <div class="blog-featured__meta">
-                        <span>By The Head Winemaker</span> &bull; <span>Oct 12, 2026</span>
+                <h1 id="post-title" class="single-article__title">Loading...</h1>
+            </header>
+
+            <div class="single-article__visual container">
+                <img id="post-image" src="" alt="" class="single-article__image">
+            </div>
+
+            <div class="single-article__body container">
+                <div id="post-content" class="single-article__text">
                     </div>
-                    <a href="article.html?id=1" class="btn btn-primary">Read Full Article</a>
-                </div>
-            </article>
-        </section>
-
-        <section class="blog-grid-section container">
-            <div class="blog-grid" id="blog-grid-container">
-                </div>
-        </section>
+            </div>
+        </article>
     </main>
 
     <footer class="site-footer">
@@ -128,7 +124,6 @@
             <a href="#">Terms of Service</a>
         </div>
     </footer>
-    
     <script src="js/main.js"></script>
 </body>
 </html>
