@@ -8,10 +8,17 @@
     "categories": ["red", "reserve", "dry"],
     "price": 28.00,
     "description": "A robust blend of Merlot and Cabernet Sauvignon with notes of dark berries and oak.",
+    "longDescription": "The Vino Red Reserve is the cornerstone of our cellar — a wine that earns its name through patience, soil, and craft. Sourced from our oldest Merlot and Cabernet Sauvignon parcels on the sun-facing hillside terraces, this vintage spent 18 months resting quietly in French oak barrels before being gently bottled without filtration to preserve its natural complexity. On the nose you are greeted with layers of ripe blackcurrant, crushed dark cherry, and a subtle undercurrent of vanilla and cedar from the oak. The palate is structured and generous, with velvety tannins that hold the wine together and a finish that lingers long after the last sip.",
     "image": "assets/images/ui/wineB.png",
     "alcohol": "13.5%",
     "volume": "750ml",
-    "rating": 4.8
+    "rating": 4.8,
+    "grapes": "Merlot, Cabernet Sauvignon",
+    "region": "Southern Albania",
+    "tastingNotes": "Blackcurrant, dark cherry, vanilla, cedar, tobacco",
+    "pairing": "Grilled lamb, aged pecorino, hearty pasta with ragù",
+    "servingTemp": "16–18 °C",
+    "decanting": "Recommended — 30 minutes"
   },
   {
     "id": "mediterranean-white",
@@ -22,24 +29,38 @@
     "categories": ["white", "dry", "crisp"],
     "price": 22.50,
     "description": "Refreshing citrus aroma, green apple notes, and a beautifully soft, clean finish.",
+    "longDescription": "Born from the coastal slopes where sea breezes keep the nights cool and the days bright, the Mediterranean White captures everything that makes Albanian viticulture so exciting. Grapes are harvested early in the morning to preserve their natural acidity, then cold-fermented in stainless steel to lock in every aromatic nuance. The result is a wine that practically glows in the glass — pale gold with silver highlights, bursting with aromas of lemon zest, ripe green apple, white peach, and a mineral salinity that speaks directly of its coastal origin. The palate is vibrant and focused, with a clean, bone-dry finish that leaves you immediately reaching for another sip.",
     "image": "assets/images/ui/wineB1.png",
     "alcohol": "12.5%",
     "volume": "750ml",
-    "rating": 4.6
+    "rating": 4.6,
+    "grapes": "Shesh i Bardhë, Chardonnay",
+    "region": "Albanian Riviera",
+    "tastingNotes": "Lemon zest, green apple, white peach, mineral salinity",
+    "pairing": "Grilled sea bass, oysters, fresh goat cheese, light salads",
+    "servingTemp": "8–10 °C",
+    "decanting": "Not required"
   },
   {
     "id": "summer-rose",
-    "name": "Summer Rose",
+    "name": "Summer Rosé",
     "year": 2023,
     "style": "Light & Fruity",
     "color": "Rose",
     "categories": ["rose", "light", "fruit-forward"],
     "price": 19.00,
     "description": "Crisp acidity with aromas of fresh strawberry, raspberry, and subtle mineral undertones.",
+    "longDescription": "The Summer Rosé is the definition of a wine made for the golden hour. Produced using the direct-press method from Grenache and a touch of native Kallmet grapes, this wine achieves its delicate salmon-pink hue naturally, without any maceration shortcuts. The aroma is immediate and joyful — fresh strawberries, wild raspberry, a hint of rose petal, and a clean stony finish that keeps every sip honest. On the palate, its light body and bright acidity make it extraordinarily food-friendly, yet it has more than enough personality to be savoured on its own, barefoot at the edge of the Adriatic, as the sun dips below the horizon.",
     "image": "assets/images/ui/wineB2.png",
     "alcohol": "12.0%",
     "volume": "750ml",
-    "rating": 4.5
+    "rating": 4.5,
+    "grapes": "Grenache, Kallmet",
+    "region": "Albanian Riviera",
+    "tastingNotes": "Strawberry, raspberry, rose petal, watermelon, stone",
+    "pairing": "Mezze platters, grilled prawns, caprese salad, light antipasti",
+    "servingTemp": "7–9 °C",
+    "decanting": "Not required"
   },
   {
     "id": "sparkling-vino",
@@ -50,10 +71,17 @@
     "categories": ["sparkling", "white", "festive"],
     "price": 24.00,
     "description": "Fresh and festive sparkling wine with fine bubbles and notes of pear and white flowers.",
+    "longDescription": "Every celebration deserves a wine that rises to the occasion. The Sparkling Vino is crafted using the traditional secondary in-bottle fermentation method, allowing the fine, persistent bubbles to develop naturally over 12 months of ageing on the lees. The result is a sparkling wine of genuine elegance — a pale straw colour with a lively mousse, aromas of ripe pear, white flowers, fresh brioche, and a discreet hint of citrus. In the mouth, the bubbles are fine and creamy rather than aggressive, creating a luxurious, lingering sensation. Whether it opens a long dinner or toasts a milestone, this bottle always creates a moment.",
     "image": "assets/images/ui/wineB3.png",
     "alcohol": "11.5%",
     "volume": "750ml",
-    "rating": 4.7
+    "rating": 4.7,
+    "grapes": "Chardonnay, Pinot Bianco",
+    "region": "Northern Albania",
+    "tastingNotes": "Ripe pear, white flowers, brioche, lemon, creamy mousse",
+    "pairing": "Canapés, smoked salmon, fresh oysters, light fruit desserts",
+    "servingTemp": "6–8 °C",
+    "decanting": "Not required"
   },
   {
     "id": "special-collection",
@@ -64,10 +92,17 @@
     "categories": ["red", "special", "aged", "limited"],
     "price": 34.00,
     "description": "Limited cellar edition crafted from hand-picked grapes, aged in French oak barrels.",
+    "longDescription": "The Special Collection is produced only in exceptional vintages, and 2019 was remarkable. A slow, warm growing season concentrated sugars and phenolics beyond what we normally see, and we knew from the moment of harvest that something extraordinary was unfolding. Each cluster was hand-selected at the peak of ripeness, sorted berry by berry on the sorting table, and fermented in small open-top vats with twice-daily manual punch-downs to gently extract colour and tannin. Twenty-four months in French oak — one third new — followed, then a further year of rest in bottle before release. The wine that emerged is layered, contemplative, and utterly unique: deep ruby-garnet in the glass, with aromas of black plum, graphite, dried herbs, and the warm spice of new oak. The tannins are dense but polished, and the finish endures for well over a minute.",
     "image": "assets/images/ui/wineB4.png",
     "alcohol": "14.0%",
     "volume": "750ml",
-    "rating": 4.9
+    "rating": 4.9,
+    "grapes": "Cabernet Sauvignon, Merlot, Syrah",
+    "region": "Southern Albania",
+    "tastingNotes": "Black plum, graphite, dried herbs, dark chocolate, warm spice",
+    "pairing": "Braised short rib, wild game, aged hard cheeses, truffle dishes",
+    "servingTemp": "17–19 °C",
+    "decanting": "Strongly recommended — 60 minutes"
   },
   {
     "id": "kallmet-classic",
@@ -78,10 +113,17 @@
     "categories": ["red", "albanian", "classic"],
     "price": 26.00,
     "description": "Traditional Albanian Kallmet grape offering rich cherry notes with a smooth, earthy finish.",
+    "longDescription": "Kallmet is Albania's most celebrated native red grape, and this bottling is our definitive expression of everything that makes it special. Grown on the ancient limestone terraces of the north, our Kallmet vines are among the oldest in the estate — low-yielding, deeply-rooted, and almost impossible to replicate elsewhere. The grapes are harvested by hand, fermented with native yeast to honour the grape's natural character, and aged for 14 months in large Slavonian oak casks that impart subtle structure without masking the fruit. The wine is a vivid ruby in the glass, with a nose of sour cherry, wild strawberry, dried rose petals, and a characteristic earthy, mineral thread. It is honest, singular, and unmistakably Albanian.",
     "image": "assets/images/ui/wineB8.png",
     "alcohol": "13.0%",
     "volume": "750ml",
-    "rating": 4.7
+    "rating": 4.7,
+    "grapes": "Kallmet (100% native Albanian varietal)",
+    "region": "Shkodër Highlands, Albania",
+    "tastingNotes": "Sour cherry, wild strawberry, dried rose, earthy minerals, subtle oak",
+    "pairing": "Traditional Albanian roasted meats, tave kosi, mature sheep's milk cheese",
+    "servingTemp": "15–17 °C",
+    "decanting": "Optional — 20 minutes"
   },
   {
     "id": "cellar-reserve",
@@ -92,9 +134,16 @@
     "categories": ["red", "reserve", "aged"],
     "price": 45.00,
     "description": "Our premium staff-selected reserve with a deep character, structured tannins, and a long finish.",
+    "longDescription": "The Cellar Reserve is the wine our entire team points to when asked what we are most proud of. It is made from the finest parcels across the estate — only those with the deepest root systems and most balanced canopies are selected — and the winemaking process is one of obsessive, patient attention. Grapes are harvested at absolute peak maturity, fermented slowly at low temperatures to maximise aromatic complexity, then transferred to a careful selection of new and second-fill French oak barriques. Three full years of barrel ageing followed, then two more in bottle before we were satisfied. The wine that resulted is deep ruby-black, almost opaque, with an extraordinary nose of espresso, black truffle, dried fig, roasted plum, and a whisper of tobacco. The palate is authoritative — dense, layered tannins that carry the wine's enormous fruit to an extraordinarily long finish. This is a wine to cellar, to share, and to remember.",
     "image": "assets/images/ui/wineB9.png",
     "alcohol": "14.5%",
     "volume": "750ml",
-    "rating": 5.0
+    "rating": 5.0,
+    "grapes": "Cabernet Sauvignon, Petit Verdot, Merlot",
+    "region": "Estate Reserve Parcels, Southern Albania",
+    "tastingNotes": "Espresso, black truffle, dried fig, roasted plum, tobacco, dark chocolate",
+    "pairing": "Dry-aged steak, slow-roasted lamb, foie gras, fine aged cheeses",
+    "servingTemp": "17–19 °C",
+    "decanting": "Essential — 90 minutes"
   }
 ]

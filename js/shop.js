@@ -166,6 +166,7 @@ function renderCard(product) {
                 <span class="shop-card__price">€${product.price.toFixed(2)}</span>
                 <div class="shop-card__actions">
                     <button type="button" class="product-button product-button-primary shop-card__add" data-product-id="${product.id}">Add to cart</button>
+                    <a href="product.html?id=${product.id}" class="product-button">Details</a>
                 </div>
             </div>
         </div>

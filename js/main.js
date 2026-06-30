@@ -57,6 +57,7 @@ if (reviewCarousel) {
             name: "Arta K.",
             location: "Tirana",
             product: "Vino Red Reserve",
+            productId: "vino-red-reserve",
             image: "assets/images/ui/wineB.png",
             alt: "Vino Red Reserve"
         },
@@ -65,6 +66,7 @@ if (reviewCarousel) {
             name: "Elio M.",
             location: "Durres",
             product: "Mediterranean White",
+            productId: "mediterranean-white",
             image: "assets/images/ui/wineB1.png",
             alt: "Mediterranean White"
         },
@@ -72,15 +74,17 @@ if (reviewCarousel) {
             quote: "Clean aroma, beautiful color, and a soft finish. A great choice for summer evenings.",
             name: "Nora D.",
             location: "Vlore",
-            product: "Summer Rose",
+            product: "Summer Rosé",
+            productId: "summer-rose",
             image: "assets/images/ui/wineB2.png",
-            alt: "Summer Rose"
+            alt: "Summer Rosé"
         },
         {
             quote: "The staff recommendation was spot on. Elegant bottle, polished taste, and real character.",
             name: "Gent P.",
             location: "Shkoder",
             product: "Special Collection",
+            productId: "special-collection",
             image: "assets/images/ui/wineB4.png",
             alt: "Special Collection"
         }
@@ -93,6 +97,7 @@ if (reviewCarousel) {
     const locationLabel = reviewCarousel.querySelector("[data-review-location]");
     const product = reviewCarousel.querySelector("[data-review-product]");
     const image = reviewCarousel.querySelector("[data-review-image]");
+    const reviewLink = reviewCarousel.querySelector("[data-review-link]");
     let activeReview = 0;
 
     function updateReview() {
@@ -104,6 +109,7 @@ if (reviewCarousel) {
         product.textContent = review.product;
         image.src = review.image;
         image.alt = review.alt;
+        if (reviewLink) reviewLink.href = `product.html?id=${review.productId}`;
     }
 
     previousButton.addEventListener("click", () => {
@@ -137,7 +143,6 @@ document.querySelectorAll("[data-subscribe-form]").forEach((form) => {
 });
 
 
-// --- Dynamic Blog Rendering Logic ---
 // --- Dynamic Blog Grid Rendering Logic ---
 const blogGridContainer = document.getElementById("blog-grid-container");
 
@@ -148,14 +153,15 @@ if (blogGridContainer) {
             // Clear the container just in case
             blogGridContainer.innerHTML = ""; 
 
-            // Loop through every article in the JSON file
-            articles.forEach(article => {
+            // Loop through every article in the JSON file.
+            // Skip id=1 since it is already shown as the hardcoded featured article.
+            articles.filter(article => article.id !== 1).forEach(article => {
                 // Create the article element
                 const articleCard = document.createElement("article");
                 articleCard.className = "blog-card";
 
-                // Grab the first paragraph to use as the excerpt
-                const excerpt = article.content[0];
+                // Use the preview key if available, otherwise fall back to first content paragraph
+                const excerpt = article.preview || article.content[0];
 
                 // Build the HTML structure for the card
                 articleCard.innerHTML = `
